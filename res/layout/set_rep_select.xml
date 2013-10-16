@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/sets_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dip" >
+
+        <TextView
+            android:id="@+id/txtview_sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dip"
+            android:paddingLeft="14dip"
+            android:text="@string/sets"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edttext_sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dip"
+            android:inputType="number"
+            android:text="1" >
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/reps_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dip" >
+
+        <TextView
+            android:id="@+id/txtview_reps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dip"
+            android:paddingLeft="14dip"
+            android:text="@string/reps"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edttext_reps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dip"
+            android:inputType="number"
+            android:text="1" >
+        </EditText>
+    </TableRow>
+
+</TableLayout>

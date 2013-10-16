@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="22dip"
+        android:paddingTop="4dip"
+        android:textSize="20sp" />
+
+    <!--
+    <CheckBox
+        android:id="@+id/chkbox_rest_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textSize="12sp"
+        android:text="@string/rest_day" />
+    -->
+
+    <ImageView
+        android:id="@+id/imgv_del_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/exercise"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/content_discard" />
+
+    <ImageView
+        android:id="@+id/imgv_add_exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgv_del_all"
+        android:layout_marginRight="19dp"
+        android:layout_toLeftOf="@+id/imgv_del_all"
+        android:src="@drawable/content_new" />
+
+</RelativeLayout>
