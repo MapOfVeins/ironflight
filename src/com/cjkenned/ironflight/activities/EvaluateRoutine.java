@@ -15,13 +15,11 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.LinearLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
 import com.cjkenned.ironflight.R;
 import com.cjkenned.ironflight.main.Evaluator;
-import com.cjkenned.ironflight.main.MuscleGroup;
 import com.cjkenned.ironflight.main.Result;
 import com.cjkenned.ironflight.main.Routine;
 
@@ -37,12 +35,6 @@ public class EvaluateRoutine extends ActionBarActivity {
 	final TextView[] muscleRes = new TextView[14];
 	final TableRow[] muscleRow = new TableRow[14];
 
-	private final MuscleGroup[] muscles = { MuscleGroup.CHEST,
-			MuscleGroup.BICEPS, MuscleGroup.TRICEPS, MuscleGroup.FOREARMS,
-			MuscleGroup.SHOULDERS, MuscleGroup.TRAPS, MuscleGroup.UPPER_BACK,
-			MuscleGroup.LOWER_BACK, MuscleGroup.LATS, MuscleGroup.ABS,
-			MuscleGroup.GLUTES, MuscleGroup.HAMSTRINGS, MuscleGroup.QUADS,
-			MuscleGroup.CALVES };
 	
 	private String[] tabs = { "Volume", "Difficulty", "Suggestions" };
 
