@@ -25,7 +25,8 @@
         <activity
             android:name="com.cjkenned.ironflight.activities.BuildRoutine"
             android:label="@string/app_build_routine"
-            android:parentActivityName="com.cjkenned.ironflight.activities.NewRoutine" >
+            android:parentActivityName="com.cjkenned.ironflight.activities.NewRoutine"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cjkenned.ironflight.activities.NewRoutine" >
@@ -37,8 +38,10 @@
         </activity>
         <activity
             android:name="com.cjkenned.ironflight.activities.EvaluateRoutine"
-            android:label="@string/app_routine_results" >
+            android:label="@string/app_routine_results"
+            android:screenOrientation="portrait" >
         </activity>
+        <activity android:name=".activities.EvaluateRoutine2" android:label="@string/app_routine_results"></activity>
     </application>
 
 </manifest>

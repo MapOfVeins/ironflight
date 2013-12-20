@@ -25,29 +25,35 @@ public class Evaluator {
 	private final int NUM_GROUPS = 14;
 	private final int NUM_DAYS = 7;
 	
-	private final int OVR_DIF_EASY_BEG = 60;
-	private final int OVR_DIF_OK_BEG = 102;
-	private final int OVR_DIF_EASY_INT = 50;
-	private final int OVR_DIF_OK_INT = 88;
+	private final int OVR_DIF_EASY_BEG = 80;
+	private final int OVR_DIF_OK_BEG = 122;
+	
+	private final int OVR_DIF_EASY_INT = 55;
+	private final int OVR_DIF_OK_INT = 95;
+	
 	private final int OVR_DIF_EASY_ADV = 30;
 	private final int OVR_DIF_OK_ADV = 54;
+	
 	private final int OVR_VOL_EASY = 10;
 	private final int OVR_VOL_OK = 17;
 	
-	private final double DAY_DIF_EASY = 42.0;
-	private final double DAY_DIF_OK = 65.0;
+	private final double DAY_DIF_EASY = 40.0;
+	private final double DAY_DIF_OK = 55.0;
+	
 	private final double DAY_VOL_EASY_STR = 50.0;
 	private final double DAY_VOL_OK_STR = 123.0;
+	
 	private final double DAY_VOL_EASY_SIZ = 196.0;
 	private final double DAY_VOL_OK_SIZ = 295.0;
 	
 	private final double MG_DIF_EASY = 20.0;
 	private final double MG_DIF_OK = 30.0;
+	
 	private final double MG_VOL_EASY_STR = 10.0;
 	private final double MG_VOL_OK_STR = 30.0;
+	
 	private final double MG_VOL_EASY_SIZ = 40.0;
 	private final double MG_VOL_OK_SIZ = 60.0;
-
 
 	// Maps for the perceived difficulties of the exercises performed on each day
 	private HashMap<MuscleGroup, String> monDif = new HashMap<MuscleGroup, String>(NUM_GROUPS);
