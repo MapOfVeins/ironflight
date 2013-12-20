@@ -189,10 +189,14 @@ public class EvaluateRoutine extends ActionBarActivity {
 		case R.id.eval_routine_help:
 			AlertDialog.Builder hBuilder = new AlertDialog.Builder(this);
 			hBuilder.setTitle("Evaluation Results");
-			hBuilder.setMessage("This shows a summary of your routine by estimated "
-					+ "volume and difficulty of chosen exercises.  If the "
-					+ "result is easy, this isn't necessarily bad, but you may "
-					+ "be able to do more work.");
+			hBuilder.setMessage("Volume - The amount of work you are doing per muscle group." +
+					" If volume is too high, you may feel extra sore.  Too low, and you might" +
+					" feel not sore enough!\n" +
+					"Difficulty - Some exercises are harder than others.  For example, it is " +
+					" much harder to perform many deadlifts than bicep curls.  Too many difficult" +
+					" exercises may be hard to perform on one day.\n" +
+					"Suggestions - Consider adding or removing exercises in the listed muscle groups" +
+					" to achieve more balance in your routine.");
 			hBuilder.setCancelable(false);
 			hBuilder.setPositiveButton("Got it",
 					new DialogInterface.OnClickListener() {
