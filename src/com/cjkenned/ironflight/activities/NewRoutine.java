@@ -33,6 +33,8 @@ public class NewRoutine extends ActionBarActivity implements OnItemSelectedListe
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		routine = new Routine();
+		// Temporary experience level 
+		routine.setExp("Beginner");
 		setContentView(R.layout.new_routine2);
 		
 		ActionBar ab = getSupportActionBar();
@@ -54,14 +56,15 @@ public class NewRoutine extends ActionBarActivity implements OnItemSelectedListe
 		goalAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		goalSpinner.setAdapter(goalAdapter);
 		goalSpinner.setOnItemSelectedListener(this);
-
+		/*
+		 * Keep experience level out of the equation for now...
 		Spinner expSpinner = (Spinner) findViewById(R.id.spinner_exp);
 		ArrayAdapter<CharSequence> expAdapter = ArrayAdapter.createFromResource(this, 
 				R.array.exp_array, android.R.layout.simple_spinner_item);
 		expAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		expSpinner.setAdapter(expAdapter);
 		expSpinner.setOnItemSelectedListener(this);
-		
+		*/
 	}
 
 	@Override
@@ -75,9 +78,9 @@ public class NewRoutine extends ActionBarActivity implements OnItemSelectedListe
 			case R.id.spinner_goal:
 				routine.setGoal(parent.getItemAtPosition(pos).toString());
 				break;
-			case R.id.spinner_exp:
+			/*case R.id.spinner_exp:
 				routine.setExp(parent.getItemAtPosition(pos).toString());
-				break;
+				break;*/
 		}	
 	}
 

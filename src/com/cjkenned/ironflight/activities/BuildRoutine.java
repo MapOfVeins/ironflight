@@ -209,7 +209,7 @@ public class BuildRoutine extends ActionBarActivity {
                 		"If not, you can go back and review your exercises and your rest days (any days " +
                 		"without exercises will be counted as rest days).\n\n" +
                 		"Your desired goal is: " + routine.getGoal() + "\n\n" +
-                		"Your experience level is: " + routine.getExp() + "\n\n");
+                		/*"Your experience level is: " + routine.getExp() + "\n\n*/"");
                 builder.setCancelable(false);
                 
                 builder.setPositiveButton("Proceed", new DialogInterface.OnClickListener() {
